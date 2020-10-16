@@ -47,6 +47,10 @@ body {
             .header_logo {
                 align-self: flex-start;
                 margin: 10px;
+                img {
+                    max-width: 49px;
+                   
+                }
                 .header_logoText {
                     display: inline-block;
                     color: #444444;
@@ -60,6 +64,7 @@ body {
                         font-size: 14px;
                         margin-bottom: 5px;
                         font-size: 18px;
+                        color: red;
                     }
      
                     .header_logoText-vor {
@@ -118,6 +123,7 @@ body {
             text-shadow: 3px 3px black;
             span {
                 font-weight: 700;
+                color: red;
             }
         }
         .preview_text {
@@ -150,4 +156,198 @@ body {
 
         }
     }
+
+    .Portfolio {
+        margin: 0 auto;
+        max-width: 1020px;
+       
+        h2 {
+            text-align: center;
+            font-size: 24px;
+            font-family: sans-serif;
+            font-weight: 700;
+            margin: 30px;
+            span {color:red;}
+        
+        }
+        .portfolio_example {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            img {
+                max-width: 320px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin: 5px;
+                box-shadow: 2px 2px red;
+                &:hover {
+                    max-width: 330px;
+                    border-radius: 0%;
+                    overflow: visible;
+                }
+                cursor: pointer;
+            }
+        }
+
     }
+    .about {
+        background-color: #4d495d;
+        padding-bottom: 30px;
+        
+        .about_header {
+            text-align: center;
+            font-size: 24px;
+            font-family: sans-serif;
+            font-weight: 700;
+            margin: 30px;
+            padding-top: 30px;
+            color: white;
+            span {color:red;}
+            p {
+                font-size: 18px;
+                font-weight: normal;
+                line-height: 32px;
+                margin: 30px 60px;
+                text-align: center;
+                text-shadow: 1px 1px rgba(155, 69, 69, 0.356);
+            }
+        }
+        .about_photo {
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .about_photo_item {
+            width: 225px;
+          
+            border: 3px solid red;
+            border-radius: 20px 0;
+            box-shadow: -1px -1px rgba(155, 69, 69, 0.356);
+            background-color: white;
+            overflow: hidden;
+            .sub_title {
+                font-size: 14px;
+                text-align: center;
+                font-style: italic;
+            
+            }
+            h3 {
+                text-align: center;
+                
+                font-size: 18px;
+                line-height: 34px;
+            }
+            p {
+                text-align: justify;
+                font-size: 18px;
+           
+                padding: 10px 5px;
+            }
+            
+            
+        }
+    }
+    
+    .contacts {
+        margin: 30px auto;
+        
+        
+        .contacts_header-title {
+            font-size: 24px;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .contacts_info {
+            display: flex;
+            justify-content: space-around;
+        
+
+            
+        }
+        .contacts_info-subtitle {
+                    text-align: center;
+                    font-size: 22px;
+                    font-family: sans-serif;
+                    max-width: 450px;
+                    span {color:red;
+                        font-weight: 700;}
+                        
+        }
+        .contacts_info-ul {
+                font-size: 18px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                
+                li {
+                    margin-bottom: 15px;
+                    .red 
+                    {color:red;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                     }
+
+                
+                }
+                .li_adress:before {
+                    content: ' ';
+                        width: 18px;
+                        height: 18px;
+                        margin: 0 5px 0 0;
+                        display: inline-block;
+                        background: url(../img/location_map_marker_icon_131522.png);
+                        background-position: center;
+                        background-size: cover;
+                }
+                .li_phone:before {
+                    content: ' ';
+                        width: 18px;
+                        height: 18px;
+                        margin: 0 5px 0 0;
+                        display: inline-block;
+                        background: url(../img/phone-handset_icon-icons.com_48252.png);
+                        background-position: center;
+                        background-size: contain;
+                }
+                .li_mail:before {
+                    content: ' ';
+                        width: 18px;
+                        height: 18px;
+                        margin: 0 5px 0 0;
+                        display: inline-block;
+                        background: url(../img/mail-black-envelope-symbol_icon-icons.com_56519.png);
+                        background-position: center;
+                        background-size: cover;
+                }
+                
+        }
+
+
+    }
+        footer {
+    height: 100px;
+    background-color: #4d495d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .footer {
+    
+        font-size: 22px;
+        color: white;
+        
+        
+            
+    }
+    .footer_arrow {
+        width: 48px;
+        height: 48px;
+        background: url(../img/arrowfooter.png) no-repeat;
+        background-position: center;
+        border: 3px solid white;
+        border-radius: 50%;
+        &:hover {cursor: pointer;}
+    }
+
+        }
+
+}
