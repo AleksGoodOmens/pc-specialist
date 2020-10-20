@@ -102,8 +102,9 @@ body {
   margin: 0;
 }
 body .wrapper {
-  max-width: 1020px;
+  min-width: 1020px;
   margin: 0 auto;
+  padding: 0 15px 0 15px;
 }
 body .wrapper .header {
   height: 95px;
